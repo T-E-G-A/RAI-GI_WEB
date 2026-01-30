@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import StayInformed from "@/components/StayInformed";
 import ScrollToTop from "@/components/ScrollToTop";
+import ScrollToTopOnNavigation from "@/components/ScrollToTopOnNavigation";
 
 export const metadata: Metadata = {
   title: "RAI-GI | Responsible AI Governance Initiative",
@@ -34,6 +35,7 @@ export default function RootLayout({
           enableSystem={false}
         >
           <div className="min-h-screen flex flex-col">
+            <ScrollToTopOnNavigation />
             <Navbar />
             {children}
             <StayInformed />
