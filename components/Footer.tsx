@@ -5,6 +5,8 @@
  * - Professional institutional styling
  */
 
+'use client';
+
 import Link from "next/link";
 
 export default function Footer() {
@@ -127,10 +129,63 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-white/10 text-center">
-          <p className="text-white/70 text-sm">
-            © {new Date().getFullYear()} RAI-GI (Responsible AI Governance Initiative). All rights reserved.
-          </p>
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            <p className="text-white/70 text-sm">
+              © {new Date().getFullYear()} RAI-GI (Responsible AI Governance Initiative). All rights reserved.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-policy-modal', { detail: 'privacy-policy' });
+                  window.dispatchEvent(event);
+                }}
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                Privacy Policy
+              </button>
+              <span className="text-white/30">|</span>
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-policy-modal', { detail: 'terms-and-conditions' });
+                  window.dispatchEvent(event);
+                }}
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                Terms & Conditions
+              </button>
+              <span className="text-white/30">|</span>
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-policy-modal', { detail: 'cookie-policy' });
+                  window.dispatchEvent(event);
+                }}
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                Cookie Policy
+              </button>
+              <span className="text-white/30">|</span>
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-policy-modal', { detail: 'disclaimer' });
+                  window.dispatchEvent(event);
+                }}
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                Disclaimer
+              </button>
+              <span className="text-white/30">|</span>
+              <button
+                onClick={() => {
+                  const event = new CustomEvent('open-policy-modal', { detail: 'code-of-conduct' });
+                  window.dispatchEvent(event);
+                }}
+                className="text-white/70 hover:text-white transition-colors"
+              >
+                Code of Conduct
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

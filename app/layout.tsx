@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import StayInformed from "@/components/StayInformed";
 import ScrollToTop from "@/components/ScrollToTop";
 import ScrollToTopOnNavigation from "@/components/ScrollToTopOnNavigation";
+import CookieConsent from "@/components/CookieConsent";
+import PolicyModal from "@/components/PolicyModal";
 
 export const metadata: Metadata = {
   title: "RAI-GI | Responsible AI Governance Initiative",
@@ -41,6 +43,8 @@ export default function RootLayout({
             <StayInformed />
             <Footer />
             <ScrollToTop />
+            <CookieConsent />
+            <PolicyModal />
           </div>
         </ThemeProvider>
       </body>
