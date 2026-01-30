@@ -21,14 +21,14 @@ export default function StayInformed() {
   };
 
   return (
-    <section className="bg-gray-100 dark:bg-gray-900 py-16">
+    <section className="bg-gray-100 py-16">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
           <div className="mb-6">
             <Mail className="w-12 h-12 text-brand-light-blue mx-auto" />
           </div>
           <h2 className="text-3xl font-bold mb-4">Stay Informed</h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-8">
+          <p className="text-gray-600 mb-8">
             Subscribe to receive the latest research insights, policy updates, and news on AI governance in Africa directly to your inbox.
           </p>
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

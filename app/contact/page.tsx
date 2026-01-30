@@ -31,16 +31,16 @@ export default function Contact() {
       </section>
 
       {/* Description Section */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-900">
+      <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
-          <p className="text-center text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto">
             Get in touch with our team to learn more about our work or explore partnership opportunities
           </p>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Contact Information */}
@@ -55,10 +55,10 @@ export default function Contact() {
                       <i className="fas fa-envelope text-brand-blue"></i>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white">Email</h3>
+                      <h3 className="text-sm font-semibold mb-1 text-gray-900">Email</h3>
                       <a
                         href="mailto:contact@responsibleaigovernance.org"
-                        className="text-gray-600 dark:text-gray-400 hover:text-brand-blue transition-colors"
+                        className="text-gray-600 hover:text-brand-blue transition-colors"
                       >
                         contact@responsibleaigovernance.org
                       </a>
@@ -69,10 +69,10 @@ export default function Contact() {
                       <i className="fas fa-phone text-brand-green"></i>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white">Phone</h3>
+                      <h3 className="text-sm font-semibold mb-1 text-gray-900">Phone</h3>
                       <a
                         href="tel:+2341234567890"
-                        className="text-gray-600 dark:text-gray-400 hover:text-brand-green transition-colors"
+                        className="text-gray-600 hover:text-brand-green transition-colors"
                       >
                         +234 123 456 7890
                       </a>
@@ -83,8 +83,8 @@ export default function Contact() {
                       <i className="fas fa-map-marker-alt text-brand-blue"></i>
                     </div>
                     <div>
-                      <h3 className="text-sm font-semibold mb-1 text-gray-900 dark:text-white">Address</h3>
-                      <p className="text-gray-600 dark:text-gray-400">
+                      <h3 className="text-sm font-semibold mb-1 text-gray-900">Address</h3>
+                      <p className="text-gray-600">
                         1140, Durumi District<br />
                         Abuja, FCT, Nigeria
                       </p>
@@ -93,7 +93,7 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              <Card className="shadow-lg bg-gray-50 dark:bg-gray-900">
+              <Card className="shadow-lg bg-gray-50">
                 <CardHeader className="pb-3">
                   <CardTitle className="text-xl">Follow Us</CardTitle>
                 </CardHeader>

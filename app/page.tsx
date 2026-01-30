@@ -137,7 +137,7 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
               Our <span className="text-brand-blue">Focus Areas</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -172,7 +172,7 @@ export default function Home() {
       <section className="py-20 bg-muted">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
               Our Strategic <span className="text-brand-blue">Partners</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -192,9 +192,9 @@ export default function Home() {
           </div>
 
           {/* Partner With Us Subsection */}
-          <div className="rounded-2xl p-12 text-center bg-green-50 dark:bg-green-900/20">
-            <h3 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Partner With Us</h3>
-            <p className="text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+          <div className="rounded-2xl p-12 text-center bg-green-50">
+            <h3 className="text-3xl font-bold mb-4 text-gray-900">Partner With Us</h3>
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
               Join our network of organizations committed to advancing responsible AI governance in Africa
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -214,7 +214,7 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">What Our Partners Say</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">What Our Partners Say</h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Trusted by governments, institutions, and organizations across Africa
             </p>
@@ -256,7 +256,7 @@ export default function Home() {
       <section className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
               Latest <span className="text-brand-blue">Research & News</span>
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -301,7 +301,7 @@ export default function Home() {
             <div className="mb-8">
               <i className="fas fa-globe-africa text-6xl text-primary mx-auto mb-6"></i>
             </div>
-            <h2 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold mb-6 text-gray-900">
               Become a <span className="text-brand-blue">Country Ambassador</span>
             </h2>
             <p className="text-xl text-muted-foreground mb-4">

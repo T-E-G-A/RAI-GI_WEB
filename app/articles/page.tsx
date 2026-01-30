@@ -126,12 +126,12 @@ The convening generated substantial momentum toward establishing Nigeria as a co
 
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
-      Announcement: "bg-blue-100 text-blue-700 dark:bg-blue-950 dark:text-blue-300",
-      Partnership: "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300",
-      Research: "bg-purple-100 text-purple-700 dark:bg-purple-950 dark:text-purple-300",
-      Event: "bg-orange-100 text-orange-700 dark:bg-orange-950 dark:text-orange-300",
+      Announcement: "bg-blue-100 text-blue-700",
+      Partnership: "bg-green-100 text-green-700",
+      Research: "bg-purple-100 text-purple-700",
+      Event: "bg-orange-100 text-orange-700",
     };
-    return colors[category] || "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300";
+    return colors[category] || "bg-gray-100 text-gray-700";
   };
 
   const handleArticleClick = (article: Article) => {
@@ -161,16 +161,16 @@ The convening generated substantial momentum toward establishing Nigeria as a co
       </section>
 
       {/* Description Section */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-900">
+      <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
-          <p className="text-center text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto">
             Latest research, policy analysis, and thought leadership on AI governance in Africa
           </p>
         </div>
       </section>
 
       {/* Articles List */}
-      <section className="py-20 bg-white dark:bg-gray-950">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto space-y-8">
             {articles.map((article, index) => (
@@ -192,20 +192,20 @@ The convening generated substantial momentum toward establishing Nigeria as a co
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(article.category)}`}>
                           {article.category}
                         </span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                        <span className="text-sm text-gray-500">
                           {article.readTime}
                         </span>
                       </div>
                       
-                      <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                      <h2 className="text-2xl font-bold mb-3 text-gray-900">
                         {article.title}
                       </h2>
                       
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                      <p className="text-sm text-gray-600 mb-3">
                         {article.author} • {article.date}
                       </p>
                       
-                      <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                      <p className="text-gray-700 mb-4 leading-relaxed">
                         {article.excerpt}
                       </p>
                     </div>

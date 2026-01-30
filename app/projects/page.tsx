@@ -79,8 +79,8 @@ export default function Projects() {
 
   const getStatusColor = (status: string) => {
     return status === "Ongoing" 
-      ? "bg-green-100 text-green-700 dark:bg-green-950 dark:text-green-300"
-      : "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300";
+      ? "bg-green-100 text-green-700"
+      : "bg-gray-100 text-gray-700";
   };
 
   return (
@@ -105,16 +105,16 @@ export default function Projects() {
       </section>
 
       {/* Description Section */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-900">
+      <section className="py-8 bg-gray-50">
         <div className="container mx-auto px-4">
-          <p className="text-center text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-8">
+          <p className="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8">
             Advancing responsible AI governance through strategic initiatives and collaborative projects across Africa
           </p>
         </div>
       </section>
 
       {/* Filter Section */}
-      <section className="py-4 bg-gray-50 dark:bg-gray-900">
+      <section className="py-4 bg-gray-50">
         <div className="container mx-auto px-4">
           {/* Filter Buttons */}
           <div className="flex justify-center gap-4">
@@ -123,7 +123,7 @@ export default function Projects() {
               className={`px-6 py-3 rounded-full font-semibold transition-all ${
                 filter === "All"
                   ? "bg-brand-blue text-white shadow-lg"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md"
+                  : "bg-white text-gray-700 hover:shadow-md"
               }`}
             >
               All
@@ -133,7 +133,7 @@ export default function Projects() {
               className={`px-6 py-3 rounded-full font-semibold transition-all ${
                 filter === "Ongoing"
                   ? "bg-brand-blue text-white shadow-lg"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md"
+                  : "bg-white text-gray-700 hover:shadow-md"
               }`}
             >
               Ongoing ({ongoingCount})
@@ -143,7 +143,7 @@ export default function Projects() {
               className={`px-6 py-3 rounded-full font-semibold transition-all ${
                 filter === "Concluded"
                   ? "bg-brand-blue text-white shadow-lg"
-                  : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:shadow-md"
+                  : "bg-white text-gray-700 hover:shadow-md"
               }`}
             >
               Concluded ({concludedCount})
@@ -153,7 +153,7 @@ export default function Projects() {
       </section>
 
       {/* Projects List */}
-      <section className="py-20 bg-white dark:bg-gray-950">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto space-y-8">
             {filteredProjects.map((project, index) => (
@@ -175,16 +175,16 @@ export default function Projects() {
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getStatusColor(project.status)}`}>
                           {project.status}
                         </span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                        <span className="text-sm text-gray-500">
                           📅 {project.duration}
                         </span>
                       </div>
                       
-                      <h2 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white">
+                      <h2 className="text-2xl font-bold mb-3 text-gray-900">
                         {project.title}
                       </h2>
                       
-                      <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                      <p className="text-gray-700 mb-4 leading-relaxed">
                         {project.description}
                       </p>
 
@@ -192,7 +192,7 @@ export default function Projects() {
                         {project.tags.map((tag, tagIndex) => (
                           <span
                             key={tagIndex}
-                            className="px-3 py-1 rounded-full text-xs bg-brand-blue/10 text-brand-blue dark:bg-brand-blue/20"
+                            className="px-3 py-1 rounded-full text-xs bg-brand-blue/10 text-brand-blue"
                           >
                             {tag}
                           </span>

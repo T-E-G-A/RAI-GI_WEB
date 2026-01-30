@@ -25,7 +25,7 @@ export default function PublicationModal({ isOpen, onClose, publication }: Publi
       <DialogContent className="max-w-[95vw] sm:max-w-[825px] max-h-[75vh] overflow-hidden flex flex-col">
         <DialogHeader>
           <div className="flex items-start justify-between">
-            <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-white pr-8 text-justify">
+            <DialogTitle className="text-2xl font-bold text-gray-900 pr-8 text-justify">
               {publication.title}
             </DialogTitle>
           </div>
@@ -38,10 +38,10 @@ export default function PublicationModal({ isOpen, onClose, publication }: Publi
             <span className="px-3 py-1 rounded-full bg-brand-blue/10 text-brand-blue font-semibold">
               {publication.category}
             </span>
-            <span className="text-gray-600 dark:text-gray-400">
+            <span className="text-gray-600">
               {publication.author}
             </span>
-            <span className="text-gray-500 dark:text-gray-500">
+            <span className="text-gray-500">
               {publication.date}
             </span>
           </div>
@@ -49,10 +49,10 @@ export default function PublicationModal({ isOpen, onClose, publication }: Publi
           {/* Executive Summary */}
           {publication.summary && (
             <div className="border-l-4 border-brand-green pl-6 py-2">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">
+              <h3 className="text-lg font-semibold text-gray-900 mb-3">
                 Executive Summary
               </h3>
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4 text-justify">
+              <div className="text-gray-700 leading-relaxed space-y-4 text-justify">
                 {publication.summary.split('\n\n').map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -62,8 +62,8 @@ export default function PublicationModal({ isOpen, onClose, publication }: Publi
 
           {/* Download CTA */}
           {publication.pdfUrl && (
-            <div className="bg-gray-50 dark:bg-gray-900 rounded-lg p-6 text-center space-y-4">
-              <p className="text-gray-700 dark:text-gray-300">
+            <div className="bg-gray-50 rounded-lg p-6 text-center space-y-4">
+              <p className="text-gray-700">
                 Read the complete report for detailed analysis, methodology, and recommendations.
               </p>
               <Button 

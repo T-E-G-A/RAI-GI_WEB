@@ -125,14 +125,14 @@ export default function About() {
       </section>
 
       {/* About RAI-GI Section */}
-      <section className="py-16 bg-white dark:bg-gray-950">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="mb-8 p-8 bg-white dark:bg-gray-800">
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+            <Card className="mb-8 p-8 bg-white">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 The Responsible AI Governance Initiative (RAI-GI) is an independent African nonprofit working to ensure that AI technologies are developed and deployed ethically, safely, and responsibly.
               </p>
-              <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              <p className="text-lg text-gray-700 leading-relaxed">
                 We build capacity for governments, support policy development, conduct AI safety research, and empower citizens with the knowledge to navigate digital risks.
               </p>
             </Card>
@@ -155,11 +155,11 @@ export default function About() {
       </section>
 
       {/* Our Team Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Team</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Team</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Meet the dedicated professionals leading Africa's responsible AI governance movement
             </p>
           </div>
@@ -176,7 +176,7 @@ export default function About() {
                   <p className="text-brand-blue font-medium mb-3">{member.role}</p>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{member.description}</p>
+                  <p className="text-sm text-gray-600 mb-4">{member.description}</p>
                   <div className="flex gap-3 justify-center">
                     <a
                       href="#"
@@ -201,17 +201,17 @@ export default function About() {
       </section>
 
       {/* Our Journey Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">
               Our <span className="text-brand-blue">Journey</span>
             </h2>
           </div>
           
           <div className="max-w-6xl mx-auto relative">
             {/* Center Timeline Line */}
-            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 dark:bg-gray-700 transform -translate-x-1/2 hidden md:block"></div>
+            <div className="absolute left-1/2 top-0 bottom-0 w-0.5 bg-gray-300 transform -translate-x-1/2 hidden md:block"></div>
             
             <div className="space-y-12">
               {/* 2024 - Foundation (Right) */}
@@ -224,21 +224,21 @@ export default function About() {
                   <Card className="ml-8 md:ml-0">
                     <CardHeader>
                       <CardTitle className="text-brand-blue">2024</CardTitle>
-                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Foundation</p>
+                      <p className="text-lg font-semibold text-gray-900">Foundation</p>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">RAI-GI conceptualized and founded</span>
+                          <span className="text-gray-700">RAI-GI conceptualized and founded</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Initial strategic framework developed</span>
+                          <span className="text-gray-700">Initial strategic framework developed</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">First partnerships established</span>
+                          <span className="text-gray-700">First partnerships established</span>
                         </li>
                       </ul>
                     </CardContent>
@@ -255,21 +255,21 @@ export default function About() {
                   <Card className="ml-8 md:ml-0">
                     <CardHeader>
                       <CardTitle className="text-brand-blue">2025</CardTitle>
-                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Official Launch</p>
+                      <p className="text-lg font-semibold text-gray-900">Official Launch</p>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Officially registered with Nigeria CAC</span>
+                          <span className="text-gray-700">Officially registered with Nigeria CAC</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Participated in National AI Roundtable</span>
+                          <span className="text-gray-700">Participated in National AI Roundtable</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Expanded partnership network</span>
+                          <span className="text-gray-700">Expanded partnership network</span>
                         </li>
                       </ul>
                     </CardContent>
@@ -288,21 +288,21 @@ export default function About() {
                   <Card className="ml-8 md:ml-0">
                     <CardHeader>
                       <CardTitle className="text-brand-blue">2026</CardTitle>
-                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Scale & Impact</p>
+                      <p className="text-lg font-semibold text-gray-900">Scale & Impact</p>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Launch African AI Fellows Program</span>
+                          <span className="text-gray-700">Launch African AI Fellows Program</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Publish comprehensive AI governance assessment</span>
+                          <span className="text-gray-700">Publish comprehensive AI governance assessment</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Train 1,000+ policymakers and stakeholders</span>
+                          <span className="text-gray-700">Train 1,000+ policymakers and stakeholders</span>
                         </li>
                       </ul>
                     </CardContent>
@@ -319,21 +319,21 @@ export default function About() {
                   <Card className="ml-8 md:ml-0">
                     <CardHeader>
                       <CardTitle className="text-brand-blue">2027-2028</CardTitle>
-                      <p className="text-lg font-semibold text-gray-900 dark:text-white">Continental Leadership</p>
+                      <p className="text-lg font-semibold text-gray-900">Continental Leadership</p>
                     </CardHeader>
                     <CardContent>
                       <ul className="space-y-2 text-sm">
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Support 10+ African governments on AI policy</span>
+                          <span className="text-gray-700">Support 10+ African governments on AI policy</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Publish 20+ research papers and policy briefs</span>
+                          <span className="text-gray-700">Publish 20+ research papers and policy briefs</span>
                         </li>
                         <li className="flex items-start gap-2">
                           <i className="fas fa-check text-brand-green mt-1"></i>
-                          <span className="text-gray-700 dark:text-gray-300">Establish continental AI safety network</span>
+                          <span className="text-gray-700">Establish continental AI safety network</span>
                         </li>
                       </ul>
                     </CardContent>
@@ -347,10 +347,10 @@ export default function About() {
       </section>
 
       {/* Our Foundation Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Foundation</h2>
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Foundation</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <Card className="p-8 bg-brand-blue text-white hover:shadow-xl transition-shadow">
@@ -397,11 +397,11 @@ export default function About() {
       </section>
 
       {/* Our Strategic Pillars Section */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-gray-900 dark:text-white">Our Strategic Pillars</h2>
-            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-gray-900">Our Strategic Pillars</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
               Five core pillars that guide our work in advancing responsible AI governance across Africa
             </p>
           </div>
@@ -412,8 +412,8 @@ export default function About() {
                     <div className="w-12 h-12 rounded-full bg-brand-blue/10 flex items-center justify-center mx-auto mb-3">
                       <i className={`fas ${pillar.icon} text-xl text-brand-blue`}></i>
                     </div>
-                    <h3 className="font-bold text-sm mb-2 text-gray-900 dark:text-white">{pillar.title}</h3>
-                    <p className="text-xs text-gray-600 dark:text-gray-400">{pillar.description}</p>
+                    <h3 className="font-bold text-sm mb-2 text-gray-900">{pillar.title}</h3>
+                    <p className="text-xs text-gray-600">{pillar.description}</p>
                   </CardContent>
                 </Card>
             ))}

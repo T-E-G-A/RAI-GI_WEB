@@ -56,15 +56,15 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
         <div className="flex">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="flex-[0_0_100%] min-w-0 px-4">
-              <Card className="mx-auto max-w-3xl bg-white dark:bg-gray-800 shadow-lg">
+              <Card className="mx-auto max-w-3xl bg-white shadow-lg">
                 <CardContent className="p-8 text-center">
                   <Quote className="w-12 h-12 text-brand-blue mx-auto mb-6" />
-                  <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 italic leading-relaxed">
+                  <p className="text-lg text-gray-700 mb-6 italic leading-relaxed">
                     "{testimonial.quote}"
                   </p>
                   <div>
-                    <p className="font-semibold text-gray-900 dark:text-white">{testimonial.author}</p>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                    <p className="font-semibold text-gray-900">{testimonial.author}</p>
+                    <p className="text-sm text-gray-600">
                       {testimonial.role}, {testimonial.organization}
                     </p>
                   </div>
@@ -83,7 +83,7 @@ export default function TestimonialsCarousel({ testimonials }: TestimonialsCarou
             className={`h-3 rounded-full transition-all ${
               index === selectedIndex
                 ? 'bg-brand-blue w-8'
-                : 'bg-gray-300 dark:bg-gray-600 w-3 hover:bg-gray-400 dark:hover:bg-gray-500'
+                : 'bg-gray-300 w-3 hover:bg-gray-400'
             }`}
             onClick={() => scrollTo(index)}
             aria-label={`Go to testimonial ${index + 1}`}
