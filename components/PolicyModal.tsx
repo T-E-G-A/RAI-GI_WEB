@@ -398,7 +398,7 @@ export default function PolicyModal() {
         <div className="overflow-hidden rounded-lg">
           {/* Header - Fixed */}
           <DialogHeader className="px-6 pt-6 pb-4 border-b border-gray-200">
-            <DialogTitle className="text-2xl font-bold text-gray-900">
+            <DialogTitle className="text-2xl font-bold text-gray-900 text-justify">
               {policy?.title}
             </DialogTitle>
           </DialogHeader>
