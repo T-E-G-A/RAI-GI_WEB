@@ -13,6 +13,27 @@ export default function CookieConsent() {
       // Show banner after a short delay for better UX
       setTimeout(() => setShowBanner(true), 1000);
     }
+
+    // Hide banner temporarily when policy modal opens
+    const handleModalOpen = () => {
+      setShowBanner(false);
+    };
+
+    const handleModalClose = () => {
+      // Show banner again if user hasn't made a choice
+      const consent = localStorage.getItem('cookie-consent');
+      if (!consent) {
+        setShowBanner(true);
+      }
+    };
+
+    window.addEventListener('open-policy-modal', handleModalOpen as any);
+    window.addEventListener('close-policy-modal', handleModalClose as any);
+
+    return () => {
+      window.removeEventListener('open-policy-modal', handleModalOpen as any);
+      window.removeEventListener('close-policy-modal', handleModalClose as any);
+    };
   }, []);
 
   const handleAccept = () => {

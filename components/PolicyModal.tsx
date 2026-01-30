@@ -383,8 +383,17 @@ export default function PolicyModal() {
 
   const policy = policies[currentPolicy];
 
+  const handleOpenChange = (open: boolean) => {
+    setIsOpen(open);
+    if (!open) {
+      // Emit close event when modal closes
+      const event = new CustomEvent('close-policy-modal');
+      window.dispatchEvent(event);
+    }
+  };
+
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog open={isOpen} onOpenChange={handleOpenChange}>
       <DialogContent className="max-w-[650px] max-h-[80vh] overflow-hidden p-0">
         <div className="overflow-hidden rounded-lg">
           {/* Header - Fixed */}
