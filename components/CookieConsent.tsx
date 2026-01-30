@@ -46,8 +46,9 @@ export default function CookieConsent() {
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             {/* Content */}
             <div className="flex-1">
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                🍪 We value your privacy
+              <h3 className="text-lg font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <i className="fas fa-cookie-bite text-brand-blue"></i>
+                We value your privacy
               </h3>
               <p className="text-sm text-gray-600 leading-relaxed">
                 We use cookies to ensure our website functions properly and to analyze how you use our site. 
