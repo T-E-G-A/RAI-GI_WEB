@@ -15,23 +15,17 @@ export default function Home() {
     {
       icon: "fa-graduation-cap",
       title: "Public Education",
-      audience: "Media, civil society, universities, professional communities",
-      delivery: "Accessible research, explainers, trainings, journalism partnerships, public briefings",
-      impact: "Improves literacy; enables accountability; reduces vulnerability to misinformation and fraud.",
+      description: "Promoting digital literacy and AI awareness",
     },
     {
       icon: "fa-users",
       title: "Citizen and Stakeholder Mobilization",
-      audience: "Coalitions of civic leaders, tech workers, industry professionals, youth groups",
-      delivery: "Non-partisan coalitions and specific policy asks (e.g., audit requirements, procurement safeguards, election integrity rules)",
-      impact: "Creates democratic legitimacy and political cover for early safeguards; improves policy quality through participation.",
+      description: "Building coalitions for democratic AI governance",
     },
     {
       icon: "fa-chalkboard-teacher",
       title: "Training Decision-Makers",
-      audience: "Regulators, electoral bodies, finance ministries, legislators, policy units",
-      delivery: "Workshops, fellowships, scenario exercises, toolkits; train-the-trainer modules",
-      impact: "Builds institutional capacity to set evidence standards, evaluate systems, and negotiate internationally.",
+      description: "Equipping regulators and policymakers with AI governance tools",
     },
   ];
 
@@ -141,28 +135,17 @@ export default function Home() {
               We work across multiple domains to ensure AI development serves humanity ethically, inclusively, and with accountability at every level.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {focusAreas.map((area, index) => (
                 <Card key={index} className="card-elevated">
                   <CardHeader>
-                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <i className={`fas ${area.icon} text-3xl text-primary`}></i>
+                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                      <i className={`fas ${area.icon} text-2xl text-primary`}></i>
                     </div>
-                    <CardTitle className="text-2xl mb-4">{area.title}</CardTitle>
+                    <CardTitle className="text-xl">{area.title}</CardTitle>
                   </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div>
-                      <h4 className="font-semibold text-brand-blue mb-2">Primary Audience</h4>
-                      <p className="text-sm text-gray-600">{area.audience}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-brand-blue mb-2">What We Deliver</h4>
-                      <p className="text-sm text-gray-600">{area.delivery}</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-brand-green mb-2">Impact</h4>
-                      <p className="text-sm text-gray-600">{area.impact}</p>
-                    </div>
+                  <CardContent>
+                    <CardDescription>{area.description}</CardDescription>
                   </CardContent>
                 </Card>
             ))}
