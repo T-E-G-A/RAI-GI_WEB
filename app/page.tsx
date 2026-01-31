@@ -124,7 +124,7 @@ export default function Home() {
                 <i className="fas fa-users mr-2"></i>
                 Join Our Mission
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-brand-blue">
                 <i className="fas fa-book mr-2"></i>
                 Our Research
               </Button>
@@ -311,7 +311,7 @@ export default function Home() {
               This is a <strong>volunteer role</strong> offering meaningful impact, professional development, and the opportunity to be at the forefront of Africa's AI future.
             </p>
             <a href="https://app.youform.com/forms/olzjjuv0" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-secondary text-white hover:bg-secondary/90">
+              <Button size="lg" className="bg-brand-green text-white hover:bg-brand-green/90">
                 <i className="fas fa-hand-peace mr-2"></i>
                 Apply to Become an Ambassador
               </Button>
