@@ -13,24 +13,25 @@ import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 export default function Home() {
   const focusAreas = [
     {
-      icon: "fa-balance-scale",
-      title: "AI Ethics & Policy",
-      description: "Draft and promote AI policies rooted in ethics and fairness",
-    },
-    {
-      icon: "fa-shield-alt",
-      title: "AI Safety Research",
-      description: "Including existential risk mitigation and alignment studies",
-    },
-    {
       icon: "fa-graduation-cap",
       title: "Public Education",
-      description: "Promoting digital literacy and AI awareness",
+      audience: "Media, civil society, universities, professional communities",
+      delivery: "Accessible research, explainers, trainings, journalism partnerships, public briefings",
+      impact: "Improves literacy; enables accountability; reduces vulnerability to misinformation and fraud.",
     },
     {
-      icon: "fa-globe",
-      title: "Global Partnerships",
-      description: "Aligning African perspectives with global AI governance",
+      icon: "fa-users",
+      title: "Citizen and Stakeholder Mobilization",
+      audience: "Coalitions of civic leaders, tech workers, industry professionals, youth groups",
+      delivery: "Non-partisan coalitions and specific policy asks (e.g., audit requirements, procurement safeguards, election integrity rules)",
+      impact: "Creates democratic legitimacy and political cover for early safeguards; improves policy quality through participation.",
+    },
+    {
+      icon: "fa-chalkboard-teacher",
+      title: "Training Decision-Makers",
+      audience: "Regulators, electoral bodies, finance ministries, legislators, policy units",
+      delivery: "Workshops, fellowships, scenario exercises, toolkits; train-the-trainer modules",
+      impact: "Builds institutional capacity to set evidence standards, evaluate systems, and negotiate internationally.",
     },
   ];
 
@@ -119,14 +120,10 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8 text-white/90">
               Advancing safe, ethical, inclusive, and accountable AI development through cutting-edge research, policy advocacy, and strategic capacity building across the African continent.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <Button size="lg" className="bg-white text-primary hover:bg-white/90">
                 <i className="fas fa-users mr-2"></i>
                 Join Our Mission
-              </Button>
-              <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-brand-blue">
-                <i className="fas fa-book mr-2"></i>
-                Our Research
               </Button>
             </div>
           </div>
@@ -144,17 +141,28 @@ export default function Home() {
               We work across multiple domains to ensure AI development serves humanity ethically, inclusively, and with accountability at every level.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {focusAreas.map((area, index) => (
                 <Card key={index} className="card-elevated">
                   <CardHeader>
-                    <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                      <i className={`fas ${area.icon} text-2xl text-primary`}></i>
+                    <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+                      <i className={`fas ${area.icon} text-3xl text-primary`}></i>
                     </div>
-                    <CardTitle className="text-xl">{area.title}</CardTitle>
+                    <CardTitle className="text-2xl mb-4">{area.title}</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <CardDescription>{area.description}</CardDescription>
+                  <CardContent className="space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-brand-blue mb-2">Primary Audience</h4>
+                      <p className="text-sm text-gray-600">{area.audience}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-brand-blue mb-2">What We Deliver</h4>
+                      <p className="text-sm text-gray-600">{area.delivery}</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-brand-green mb-2">Impact</h4>
+                      <p className="text-sm text-gray-600">{area.impact}</p>
+                    </div>
                   </CardContent>
                 </Card>
             ))}
@@ -162,7 +170,7 @@ export default function Home() {
           <div className="text-center mt-12">
             <Button size="lg" className="bg-brand-blue text-white">
               <i className="fas fa-arrow-right mr-2"></i>
-              Explore Our Programs
+              Explore Our Projects
             </Button>
           </div>
         </div>
